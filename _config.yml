@@ -1,0 +1,26 @@
+# Site settings
+title: Integrated Technology Consultants
+email: info@itc-in.com
+description: >-
+  Professional technology consulting services for businesses of all sizes.
+  IT infrastructure, cloud solutions, cybersecurity, and digital transformation.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://itc-in.com" # the base hostname & protocol for your site
+phone: "1.260.123.4567"
+address: "Indianapolis, IN"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache/
+  - .jekyll
+  - README.md
