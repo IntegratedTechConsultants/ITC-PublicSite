@@ -1,41 +1,19 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>{{ site.title }}</h3>
-                <p>{{ site.description }}</p>
-            </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="{{ "/" | relative_url }}">Home</a></li>
-                    <li><a href="{{ "/services" | relative_url }}">Services</a></li>
-                    <li><a href="{{ "/about" | relative_url }}">About</a></li>
-                    <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="{{ "/services#infrastructure" | relative_url }}">IT Infrastructure</a></li>
-                    <li><a href="{{ "/services#cloud" | relative_url }}">Cloud Solutions</a></li>
-                    <li><a href="{{ "/services#security" | relative_url }}">Cybersecurity</a></li>
-                    <li><a href="{{ "/services#digital" | relative_url }}">Digital Transformation</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Contact</h3>
-                <ul>
-                    <li>{{ site.address }}</li>
-                    <li>{{ site.phone }}</li>
-                    <li>{{ site.email }}</li>
-                    <li>{{ site.url | remove: "https://" | remove: "http://" }}</li>
-                </ul>
-            </div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">{{site.title}}</h2>
+          <ul>
+            {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
+            {% for item in footermenu %}
+            <li class="{% if item.url == page.url %}active{% endif %}">
+              <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All Rights Reserved.</p>
-        </div>
+      </div>
     </div>
-</footer>
+  </div>
+</div>

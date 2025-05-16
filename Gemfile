@@ -2,12 +2,10 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2.0"
 
-# If you're hosting on GitHub Pages, use:
-# gem "github-pages", group: :jekyll_plugins
-
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.6"
+  gem "jekyll-environment-variables"
 end
 
 # Windows and JRuby fixes

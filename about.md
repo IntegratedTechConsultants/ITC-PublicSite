@@ -1,36 +1,28 @@
 ---
-layout: default
 title: About
-permalink: /about/
+layout: page
+description: Your trusted technology partner
+bodyClass: page-about
 ---
 
-<section class="hero" id="about-hero">
-    <div class="container">
-        <h2>About ITC</h2>
-        <p>Your trusted technology partner</p>
-    </div>
-</section>
+# About ITC
 
-{% include about.html %}
+Integrated Technology Consultants (ITC) is a premier technology consulting firm dedicated to providing innovative and effective solutions for businesses of all sizes.
 
-<section class="team-section">
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Leadership</h2>
-            <p>Meet the team behind ITC</p>
-        </div>
-        
-        <div class="team-grid">
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="{{ "/assets/images/josh-goss.jpg" | relative_url }}" alt="Josh Goss">
-                </div>
-                <h3>Josh Goss</h3>
-                <p class="member-title">President</p>
-                <p>With over 15 years of experience in technology consulting, Josh leads our team with a focus on delivering exceptional client outcomes.</p>
-            </div>
-            
-            <!-- Add more team members as needed -->
-        </div>
-    </div>
-</section>
+Founded on the principles of excellence, integrity, and client success, we combine deep technical expertise with business acumen to deliver technology solutions that drive real value.
+
+Our team of experienced consultants works closely with clients to understand their unique challenges and objectives, ensuring that our solutions are perfectly aligned with their business goals.
+
+## Our Process
+
+### Discovery
+We begin by understanding your business goals, challenges, and current technology landscape through in-depth consultations with key stakeholders.
+
+### Strategy
+Our experts develop a comprehensive strategy and roadmap that aligns technology solutions with your business objectives and budget.
+
+### Implementation
+Our technical team executes the plan with precision, ensuring minimal disruption to your operations while maintaining clear communication throughout.
+
+### Support
+We provide ongoing support and optimization to ensure your technology continues to deliver value and adapt to changing business needs.

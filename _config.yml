@@ -9,11 +9,48 @@ url: "https://itc-in.com" # the base hostname & protocol for your site
 phone: "1.260.123.4567"
 address: "Indianapolis, IN"
 
+logo:
+  mobile: "assets/images/logo-mobile.svg"
+  desktop: "assets/images/logo.svg"
+  desktop_height: "36px"
+
+home: 
+  title: Technology Solutions for Your Business
+  description: We provide expert technology consulting and implementation services to help your business thrive in the digital age.
+
+footer:
+  copyright_text: "&copy; Integrated Technology Consultants"
+
+seo:
+  meta_og_title: "Integrated Technology Consultants"
+  meta_og_type: "website"
+  meta_og_url: "https://itc-in.com"
+  meta_og_description: "Professional technology consulting services for businesses of all sizes."
+
+collections:
+  services:
+    output: true
+  team:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-environment-variables
 
 # Exclude from processing
 exclude:

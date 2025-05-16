@@ -1,0 +1,11 @@
+- title: Expert Consulting
+  description: Strategic technology guidance from experienced professionals
+  image: images/features/consulting.svg
+  
+- title: Tailored Solutions
+  description: Custom technology solutions designed for your business needs
+  image: images/features/solutions.svg
+  
+- title: Ongoing Support
+  description: Reliable technical support and continuous optimization
+  image: images/features/support.svg
